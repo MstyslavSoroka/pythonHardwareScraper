@@ -20,7 +20,7 @@ def detect_type(title):
         return "RAM"
     if "power supply" in t or "psu" in t:
         return "PSU"
-    if "ssd" in t or "hdd" in t or "nvme" in t or "TB" in t:
+    if "ssd" in t or "hdd" in t or "nvme" in t or "tb" in t:
         return "Storage"
     return "Unknown"
 
