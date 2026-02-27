@@ -31,10 +31,10 @@ def loopProduct(products):
 
         title = p.select_one('.item-title').text.strip()
 
-        price = p.select_one('.price-current').text.strip()
+        price = p.select_one('.price-current').text[:-1].strip()
         component = detect_type(title)
         
-        file.write(f"\"{title}\",{component},{price}\n")
+        file.write(f"\"{title}\",{component},\"{price}\"\n")
         print(f"Title: {title}, Price: {price}")
             
 
