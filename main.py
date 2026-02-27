@@ -14,15 +14,15 @@ def detect_type(title):
     t = title.lower()
     if "graphics card" in t or "gpu" in t:
         return "GPU"
-    if "processor" in t or "cpu" in t:
+    elif "processor" in t or "cpu" in t:
         return "CPU"
-    if "motherboard" in t:
+    elif "motherboard" in t:
         return "Motherboard"
-    if "memory" in t or "ddr" in t:
+    elif "memory" in t or "ddr" in t:
         return "RAM"
-    if "power supply" in t or "psu" in t:
+    elif "power supply" in t or "psu" in t:
         return "PSU"
-    if "ssd" in t or "hdd" in t or "nvme" in t or "tb" in t:
+    elif "ssd" in t or "hdd" in t or "nvme" in t or "tb" in t:
         return "Storage"
     return "Unknown"
 
